@@ -1,0 +1,41 @@
+let languages = ['German', 'French'];
+let audios = ['languageGuessingAudio/german.mp3', 'languageGuessingAudio/french.mp3'];
+
+let numberOfLanguages = languages.length;
+let currentLanguageIndex;
+let dropdownLanguages;
+
+window.onload = function() {
+
+    dropdownLanguages = document.getElementById('subject');
+
+    dropdownLanguages.options[0] = new Option('--Select the language--', '');
+    for (i=0; i< numberOfLanguages; i++){
+        dropdownLanguages.options[i+1] = new Option(languages[i], languages[i]);
+    }
+
+    let playButton = document.getElementById('playButton');
+    if (playButton){
+        
+        playButton.addEventListener("click", playAudio);
+    }
+
+    let checkButton = document.getElementById('checkButton');
+    checkButton.addEventListener("click", checkAnswer )
+
+}
+
+function playAudio(){
+    currentLanguageIndex = Math.floor((Math.random() * numberOfLanguages));
+    let sound = new Audio(audios[currentLanguageIndex]);
+    sound.play();
+}
+
+function checkAnswer(){
+    if (languages[currentLanguageIndex] == dropdownLanguages.value){
+        alert('That is correct!');
+    }
+    else{
+        alert('Try again!');
+    }
+}
