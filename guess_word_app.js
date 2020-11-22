@@ -8,5 +8,5 @@ function wrongFunction (){
 };
 
 function nextFunction (){
-    window.open("index2.html", "_self");
+    window.open("guess_word_index2.html", "_self");
 };
