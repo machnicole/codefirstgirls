@@ -1,0 +1,36 @@
+body{
+    background-color: lightskyblue;
+    padding-top: 95px;
+}
+
+.header{
+    position: relative;
+    top: 40px;
+    font-size:40px;
+}
+
+
+div.horizontalgap {
+    float: left;
+    overflow: hidden;
+    height: 1px;
+    width: 0px;
+}
+
+button{
+    margin-left: 5px;
+    margin-right: 5px;
+   
+}
+  
+p {
+    padding: 5px;
+}
+
+audio { 
+    width: 300px; 
+    border-radius: 90px;
+}
+
+
+   

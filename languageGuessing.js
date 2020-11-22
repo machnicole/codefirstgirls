@@ -1,5 +1,26 @@
-let languages = ['German', 'French'];
-let audios = ['languageGuessingAudio/german.mp3', 'languageGuessingAudio/french.mp3'];
+let languages = ['German', 
+                 'French',
+                 'Chinese',
+                 'Dutch',
+                 'Greek',
+                 'Italian',
+                 'Japanese',
+                 'Portuguese',
+                 'Russian',
+                 'Spanish',
+                 'Thai' 
+                 ];
+let audios = ['languageGuessingAudio/german.mp3', 
+              'languageGuessingAudio/french.mp3',
+              'languageGuessingAudio/chinese.mp3',
+              'languageGuessingAudio/dutch.mp3',
+              'languageGuessingAudio/greek.mp3',
+              'languageGuessingAudio/italian.mp3',
+              'languageGuessingAudio/japanese.mp3',
+              'languageGuessingAudio/portuguese.mp3',
+              'languageGuessingAudio/russian.mp3',
+              'languageGuessingAudio/spanish.mp3',
+              'languageGuessingAudio/thai.mp3'];
 
 let numberOfLanguages = languages.length;
 let currentLanguageIndex;
@@ -36,6 +57,6 @@ function checkAnswer(){
         alert('That is correct!');
     }
     else{
-        alert('Try again!');
+        alert('Maybe the next time!');
     }
 }
